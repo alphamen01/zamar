@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>
+    Air UI Admin Template (Html Edition)
+    Air UI HTML Admin Template
+  </title>
+  <link href="../../components/core/img/favicon.png" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900" rel="stylesheet">
+
+  <!-- VENDORS -->
+  <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/font-feathericons/dist/feather.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/font-linearicons/style.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/font-icomoon/style.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/perfect-scrollbar/css/perfect-scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/chart.js/dist/Chart.min.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/c3/c3.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.datatables.net/v/bs4/dt-1.10.18/fc-3.2.5/r-2.2.2/datatables.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="../../vendors/tempus-dominus-bs4/build/css/tempusdominus-bootstrap-4.min.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/fullcalendar/dist/fullcalendar.min.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/ionrangeslider/css/ion.rangeSlider.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap-sweetalert/dist/sweetalert.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/nprogress/nprogress.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/summernote/dist/summernote.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/dropify/dist/css/dropify.min.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/jquery-steps/demo/css/jquery.steps.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap-select/dist/css/bootstrap-select.min.css">
+
+
+  <script src="../../vendors/jquery/dist/jquery.min.js"></script>
+  <script src="../../vendors/popper.js/dist/umd/popper.js"></script>
+  <script src="../../vendors/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../../vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+  <script src="../../vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+  <script src="../../vendors/chartist/dist/chartist.min.js"></script>
+  <script src="../../vendors/chart.js/dist/Chart.min.js"></script>
+  <script src="../../vendors/jqvmap/dist/jquery.vmap.min.js"></script>
+  <script src="../../vendors/jqvmap/dist/maps/jquery.vmap.usa.js"></script>
+  <script src="../../vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+  <script src="../../vendors/d3/d3.min.js"></script>
+  <script src="../../vendors/d3-dsv/dist/d3-dsv.js"></script>
+  <script src="../../vendors/d3-time-format/dist/d3-time-format.js"></script>
+  <script src="../../vendors/c3/c3.min.js"></script>
+  <script src="../../vendors/peity/jquery.peity.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdn.datatables.net/v/bs4/dt-1.10.18/fc-3.2.5/r-2.2.2/datatables.min.js"></script>
+  <script src="../../vendors/editable-table/mindmup-editabletable.js"></script>
+  <script src="../../vendors/moment/min/moment.min.js"></script>
+  <script src="../../vendors/tempus-dominus-bs4/build/js/tempusdominus-bootstrap-4.min.js"></script>
+  <script src="../../vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+  <script src="../../vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="../../vendors/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+  <script src="../../vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
+  <script src="../../vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../../vendors/nprogress/nprogress.js"></script>
+  <script src="../../vendors/summernote/dist/summernote.min.js"></script>
+  <script src="../../vendors/nestable/jquery.nestable.js"></script>
+  <script src="../../vendors/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
+  <script src="../../vendors/autosize/dist/autosize.min.js"></script>
+  <script src="../../vendors/bootstrap-show-password/dist/bootstrap-show-password.min.js"></script>
+  <script src="../../vendors/dropify/dist/js/dropify.min.js"></script>
+  <script src="../../vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
+  <script src="../../vendors/jquery-steps/build/jquery.steps.min.js"></script>
+  <script src="../../vendors/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+  <script src="../../vendors/select2/dist/js/select2.full.min.js"></script>
+  <script src="../../vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+  <script src="../../vendors/d3-dsv/dist/d3-dsv.js"></script>
+  <script src="../../vendors/d3-time-format/dist/d3-time-format.js"></script>
+  <script src="../../vendors/techan/dist/techan.min.js"></script>
+  <script src="../../vendors/Stickyfill/dist/stickyfill.min.js"></script>
+
+  <!-- AIR UI HTML ADMIN TEMPLATE MODULES-->
+  <link rel="stylesheet" type="text/css" href="../../components/vendors/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/core/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/widgets/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/system/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/menu-left/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/menu-top/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/footer/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/footer-dark/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/topbar/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/topbar-dark/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/subbar/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/sidebar/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/chat/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/apps/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/apps/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/extra-apps/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/ecommerce/style.css">
+  <link rel="stylesheet" type="text/css" href="../../components/dashboards/crypto-terminal/style.css">
+
+  <script src="../../components/core/index.js"></script>
+  <script src="../../components/menu-left/index.js"></script>
+  <script src="../../components/menu-top/index.js"></script>
+  <script src="../../components/sidebar/index.js"></script>
+  <script src="../../components/topbar/index.js"></script>
+  <script src="../../components/chat/index.js"></script>
+
+  <!-- PRELOADER STYLES-->
+  <style>
+    .air__initialLoading {
+      position: fixed;
+      z-index: 99999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDFweCIgIGhlaWdodD0iNDFweCIgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIiBjbGFzcz0ibGRzLXJvbGxpbmciPiAgICA8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiBmaWxsPSJub25lIiBuZy1hdHRyLXN0cm9rZT0ie3tjb25maWcuY29sb3J9fSIgbmctYXR0ci1zdHJva2Utd2lkdGg9Int7Y29uZmlnLndpZHRofX0iIG5nLWF0dHItcj0ie3tjb25maWcucmFkaXVzfX0iIG5nLWF0dHItc3Ryb2tlLWRhc2hhcnJheT0ie3tjb25maWcuZGFzaGFycmF5fX0iIHN0cm9rZT0iIzAxOTBmZSIgc3Ryb2tlLXdpZHRoPSIxMCIgcj0iMzUiIHN0cm9rZS1kYXNoYXJyYXk9IjE2NC45MzM2MTQzMTM0NjQxNSA1Ni45Nzc4NzE0Mzc4MjEzOCIgdHJhbnNmb3JtPSJyb3RhdGUoODQgNTAgNTApIj4gICAgICA8YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVOYW1lPSJ0cmFuc2Zvcm0iIHR5cGU9InJvdGF0ZSIgY2FsY01vZGU9ImxpbmVhciIgdmFsdWVzPSIwIDUwIDUwOzM2MCA1MCA1MCIga2V5VGltZXM9IjA7MSIgZHVyPSIxcyIgYmVnaW49IjBzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSI+PC9hbmltYXRlVHJhbnNmb3JtPiAgICA8L2NpcmNsZT4gIDwvc3ZnPg==);
+      background-color: #fff;
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+      $('.air__initialLoading').delay(200).fadeOut(400)
+    })
+  </script>
+</head>
+<body>
+  <div class="air__initialLoading"></div>
+  <div class="air__sidebar">
+    <a
+      href="javascript: void(0);"
+      class="air__sidebar__close air__sidebar__actionToggle fe fe-x-circle"
+    ></a>
+    <h5>
+      <strong>Theme Settings</strong>
+    </h5>
+    <div class="air__utils__line mb-4" style="margin-top: 19px;"></div>
+    <div class="air__sidebar__scroll">
+      <p class="text-muted">
+        This component gives possibility to construct custom blocks with any widgets, components and
+        elements inside, like this theme settings
+      </p>
+      <div class="air__sidebar__type">
+        <div class="air__sidebar__type__title">
+          <span>Menu Type</span>
+        </div>
+        <div class="air__sidebar__type__items">
+          <div class="row">
+            <div class="col-6">
+              <label class="air__utils__control air__utils__control__radio">
+                <input type="radio" name="menuType" checked to="body" setting="" />
+                <span class="air__utils__control__indicator"></span>
+                Default
+              </label>
+              <label class="air__utils__control air__utils__control__radio hideIfMenuTop">
+                <input type="radio" name="menuType" to="body" setting="air__menu--flyout" />
+                <span class="air__utils__control__indicator"></span>
+                Flyout
+              </label>
+            </div>
+            <div class="col-6">
+              <label class="air__utils__control air__utils__control__radio hideIfMenuTop">
+                <input type="radio" name="menuType" to="body" setting="air__menu--compact" />
+                <span class="air__utils__control__indicator"></span>
+                Compact
+              </label>
+              <label class="air__utils__control air__utils__control__radio">
+                <input type="radio" name="menuType" to="body" setting="air__menu--nomenu" />
+                <span class=" air__utils__control__indicator"></span>
+                No Menu
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="air__sidebar__item hideIfMenuTop">
+        <div class="air__sidebar__label">
+          Toggled left menu
+        </div>
+        <div class="air__sidebar__container">
+          <label class="air__sidebar__switch">
+            <input type="checkbox" to="body" setting="air__menu--toggled" />
+            <span class="air__sidebar__switch__slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="air__sidebar__item hideIfMenuTop">
+        <div class="air__sidebar__label">
+          Unfixed left menu
+        </div>
+        <div class="air__sidebar__container">
+          <label class="air__sidebar__switch">
+            <input type="checkbox" to="body" setting="air__menu--unfixed" />
+            <span class="air__sidebar__switch__slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="air__sidebar__item">
+        <div class="air__sidebar__label">
+          Fixed topbar
+        </div>
+        <div class="air__sidebar__container">
+          <label class="air__sidebar__switch">
+            <input type="checkbox" to="body" setting="air__layout--fixedHeader" />
+            <span class="air__sidebar__switch__slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="air__sidebar__item">
+        <div class="air__sidebar__label">
+          Menu color
+        </div>
+        <div class="air__sidebar__container">
+          <div class="air__sidebar__select" to="body">
+            <div
+              class="air__sidebar__select__item air__sidebar__select__item--white"
+              setting="air__menu--white"
+            ></div>
+            <div
+              class="air__sidebar__select__item air__sidebar__select__item--gray"
+              setting="air__menu--gray"
+            ></div>
+            <div
+              class="air__sidebar__select__item air__sidebar__select__item--blue"
+              setting="air__menu--blue"
+            ></div>
+            <div
+              class="air__sidebar__select__item air__sidebar__select__item--black air__sidebar__select__item--active"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="air__sidebar__item">
+        <div class="air__sidebar__label">
+          Flyout menu
+        </div>
+        <div class="air__sidebar__container">
+          <div class="air__sidebar__select" to="body">
+            <div
+              class="air__sidebar__select__item air__sidebar__select__item--white"
+              setting="air__menu__submenu--white"
+            ></div>
+            <div
+              class="air__sidebar__select__item air__sidebar__select__item--gray"
+              setting="air__menu__submenu--gray"
+            ></div>
+            <div
+              class="air__sidebar__select__item air__sidebar__select__item--blue air__sidebar__select__item--active"
+              setting="air__menu__submenu--blue"
+            ></div>
+            <div
+              class="air__sidebar__select__item air__sidebar__select__item--black"
+              setting="air__menu__submenu--black"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="air__sidebar__item">
+        <div class="air__sidebar__label">
+          Login color
+        </div>
+        <div class="air__sidebar__container">
+          <div class="air__sidebar__select" to="body">
+            <div
+              class="air__sidebar__select__item air__sidebar__select__item--white"
+              setting="air__auth--white"
+            ></div>
+            <div
+              class="air__sidebar__select__item air__sidebar__select__item--gray air__sidebar__select__item--active"
+              setting=""
+            ></div>
+            <div
+              class="air__sidebar__select__item air__sidebar__select__item--blue"
+              setting="air__auth--blue"
+            ></div>
+            <div
+              class="air__sidebar__select__item air__sidebar__select__item--black"
+              setting="air__auth--black"
+            ></div>
+            <div
+              class="air__sidebar__select__item air__sidebar__select__item--img"
+              setting="air__auth--img"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="air__sidebar__item">
+        <div class="air__sidebar__label">
+          Content no max-width
+        </div>
+        <div class="air__sidebar__container">
+          <label class="air__sidebar__switch">
+            <input type="checkbox" to="body" setting="air__layout--contentNoMaxWidth" />
+            <span class="air__sidebar__switch__slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="air__sidebar__item">
+        <div class="air__sidebar__label">
+          App max-width
+        </div>
+        <div class="air__sidebar__container">
+          <label class="air__sidebar__switch">
+            <input type="checkbox" to="body" setting="air__layout--appMaxWidth" />
+            <span class="air__sidebar__switch__slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="air__sidebar__item">
+        <div class="air__sidebar__label">
+          Gray background
+        </div>
+        <div class="air__sidebar__container">
+          <label class="air__sidebar__switch">
+            <input type="checkbox" to="body" setting="air__layout--grayBackground" />
+            <span class="air__sidebar__switch__slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="air__sidebar__item">
+        <div class="air__sidebar__label">
+          Gray topbar
+        </div>
+        <div class="air__sidebar__container">
+          <label class="air__sidebar__switch">
+            <input type="checkbox" to="body" setting="air__layout--grayTopbar" />
+            <span class="air__sidebar__switch__slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="air__sidebar__item">
+        <div class="air__sidebar__label">
+          Squared card borders
+        </div>
+        <div class="air__sidebar__container">
+          <label class="air__sidebar__switch">
+            <input type="checkbox" to="body" setting="air__layout--squaredBorders" />
+            <span class="air__sidebar__switch__slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="air__sidebar__item">
+        <div class="air__sidebar__label">
+          Card shadow
+        </div>
+        <div class="air__sidebar__container">
+          <label class="air__sidebar__switch">
+            <input type="checkbox" to="body" setting="air__layout--cardsShadow" />
+            <span class="air__sidebar__switch__slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="air__sidebar__item">
+        <div class="air__sidebar__label">
+          Borderless cards
+        </div>
+        <div class="air__sidebar__container">
+          <label class="air__sidebar__switch">
+            <input type="checkbox" to="body" setting="air__layout--borderless" />
+            <span class="air__sidebar__switch__slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="air__sidebar__item">
+        <div class="air__sidebar__label">
+          Menu shadow
+        </div>
+        <div class="air__sidebar__container">
+          <label class="air__sidebar__switch">
+            <input type="checkbox" to="body" setting="air__menu--shadow" />
+            <span class="air__sidebar__switch__slider"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    class="air__sidebar__toggleButton air__sidebar__actionToggle btn btn-rounded btn-light text-nowrap text-dark font-weight-bold font-size-18"
+  >
+    <i class="fe fe-settings text-blue mr-md-2"></i>
+    <span class="d-none d-md-inline">Settings</span>
+  </button>
+  <div class="air__chat">
+    <button
+      class="air__chat__toggleButton air__chat__actionToggle btn btn-rounded btn-light text-nowrap text-dark font-weight-bold font-size-18"
+    >
+      <i class="fe fe-message-square text-blue mr-md -2"></i>
+      <span class="d-none d-md-inline">Support Chat</span>
+    </button>
+    <div class="air__chat__container">
+      <div class="d-flex flex-wrap mb-2">
+        <div class="text-dark font-size-18 font-weight-bold mr-auto">Support Chat</div>
+        <button class="air__g14__closeBtn btn btn-link air__chat__actionToggle">
+          <i class="fe fe-x-square font-size-21 align-middle text-gray-6"></i>
+        </button>
+      </div>
+      <div class="air__chat__innerContainer d-flex flex-column justify-content-end">
+        <div class="air__g14__contentWrapper air__customScroll">
+          <div class="air__g14__message">
+            <div class="air__g14__messageContent">
+              <div class="text-gray-4 font-size-12 text-uppercase">You, 5 min ago</div>
+              <div>
+                Hi! Anyone here? I want to know how I can buy Air UI?
+              </div>
+            </div>
+            <div class="air__g14__messageAvatar air__utils__avatar">
+              <img src="../../components/core/img/avatars/avatar-2.png" alt="You" />
+            </div>
+          </div>
+          <div class="air__g14__message air__g14__message--answer">
+            <div class="air__g14__messageContent">
+              <div class="text-gray-4 font-size-12 text-uppercase">Mary, 14 sec ago</div>
+              <div>
+                Please call us + 100 295 000
+              </div>
+            </div>
+            <div class="air__g14__messageAvatar air__utils__avatar">
+              <img src="../../components/core/img/avatars/2.jpg" alt="Mary Stanform" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-2 pb-2">
+        Mary is typing...
+      </div>
+      <div>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Send message..."
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button">
+              <i class="fe fe-send align-middle"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="air__utils__heading">
+  <h5>Ecommerce: Cart</h5>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h6 class="mb-4 text-uppercase">
+      <strong>Order items</strong>
+    </h6>
+    <div class="table-responsive">
+      <table class="table table-hover text-right mb-4">
+        <thead class="thead-default">
+          <tr>
+            <th class="text-center">#</th>
+            <th class="text-left">Description</th>
+            <th class="text-right">Quantity</th>
+            <th class="text-right">Unit Cost</th>
+            <th class="text-right">Total</th>
+            <th>
+              <!-- -->
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-center">1</td>
+            <td class="text-left">
+              <a href="javascript: void(0);" class="btn btn-sm btn-light"
+                >Server hardware purchase</a
+              >
+            </td>
+            <td class="text-right">
+              <input type="text" class="form-control width-50" value="2" />
+            </td>
+            <td class="text-right">$75.00</td>
+            <td>$2,152.00</td>
+            <td>
+              <a href="javascript: void(0);" class="btn btn-sm btn-light"
+                ><i class="fe fe-trash"> <!-- --></i> Remove</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="text-center">2</td>
+            <td class="text-left">
+              <a href="javascript: void(0);" class="btn btn-sm btn-light"
+                >Office furniture purchase</a
+              >
+            </td>
+            <td class="text-right">
+              <input type="text" class="form-control width-50" value="3" />
+            </td>
+            <td class="text-right">$169.00</td>
+            <td>$4,169.00</td>
+            <td>
+              <a href="javascript: void(0);" class="btn btn-sm btn-light"
+                ><i class="fe fe-trash"> <!-- --></i> Remove</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="text-center">3</td>
+            <td class="text-left">
+              <a href="javascript: void(0);" class="btn btn-sm btn-light"
+                >Company Anual Dinner Catering</a
+              >
+            </td>
+            <td class="text-right">
+              <input type="text" class="form-control width-50" value="14" />
+            </td>
+            <td class="text-right">$49.00</td>
+            <td>$1,260.00</td>
+            <td>
+              <a href="javascript: void(0);" class="btn btn-sm btn-light"
+                ><i class="fe fe-trash"> <!-- --></i> Remove</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="text-center">4</td>
+            <td class="text-left">
+              <a href="javascript: void(0);" class="btn btn-sm btn-light">Payment for Jan 2016</a>
+            </td>
+            <td class="text-right">
+              <input type="text" class="form-control width-50" value="10" />
+            </td>
+            <td class="text-right">$12.00</td>
+            <td>$866.00</td>
+            <td>
+              <a href="javascript: void(0);" class="btn btn-sm btn-light"
+                ><i class="fe fe-trash"> <!-- --></i> Remove</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h6 class="mb-4 text-uppercase">
+      <strong>Shipment details</strong>
+    </h6>
+    <div class="row mb-4">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="l31">Email</label>
+              <input type="text" class="form-control" id="l31" placeholder="Email" required="" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="l32">Phone Number</label>
+              <input
+                type="text"
+                class="form-control"
+                id="l32"
+                placeholder="Phone Number"
+                required=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="l33">Name</label>
+              <input type="text" class="form-control" id="l33" placeholder="Name" required="" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="l34">Surname</label>
+              <input type="text" class="form-control" id="l34" placeholder="Surname" required="" />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="l35">City</label>
+          <input type="text" class="form-control" id="l35" placeholder="City" required="" />
+        </div>
+        <div class="form-group">
+          <label for="l36">Address</label>
+          <input type="text" class="form-control mb-3" id="l36" placeholder="Address" required="" />
+          <input type="text" class="form-control" placeholder="Address" required="" />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="font-size-24">
+          <i class="fa fa-cc-visa text-primary"></i>
+          <i class="fa fa-cc-mastercard text-default"></i>
+          <i class="fa fa-cc-amex text-default"></i>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua.
+        </p>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </p>
+      </div>
+    </div>
+    <h6 class="mb-4 text-uppercase">
+      <strong>Billing details</strong>
+    </h6>
+    <div class="row mb-4">
+      <div class="col-lg-8">
+        <div class="form-group">
+          <label for="l41">Card Number</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="fe fe-credit-card"></i>
+              </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Card Number" id="l41" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <div class="form-group">
+              <label for="l44">Expiration Date</label>
+              <input type="text" class="form-control" id="l44" placeholder="MM / YY" required="" />
+            </div>
+          </div>
+          <div class="col-md-5 pull-right">
+            <div class="form-group">
+              <label for="l43">CVC Code</label>
+              <input type="text" class="form-control" id="l43" placeholder="CVC" required="" />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="l42">Card Name</label>
+          <input type="text" class="form-control" id="l42" placeholder="Name and Surname" />
+        </div>
+      </div>
+    </div>
+    <div class="border-top text-dark font-size-18 pt-4 text-right">
+      <p class="mb-1">Sub - Total amount: <strong class="font-size-24">$5,700.00</strong></p>
+      <p class="mb-1">VAT: <strong class="font-size-24">$57.00</strong></p>
+      <p class="mb-4">Grand Total: <strong class="font-size-36">$5,757.00</strong></p>
+      <a href="javascript: void(0);" class="btn btn-lg btn-success width-200 mb-2">Order Now</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

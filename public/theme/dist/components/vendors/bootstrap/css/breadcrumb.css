@@ -1,0 +1,9 @@
+/* BREADCRUMB */
+.breadcrumb {
+    background: #f2f4f8;
+    margin-bottom: 3rem;
+}
+
+.breadcrumb a {
+	color: #786fa4;
+}
