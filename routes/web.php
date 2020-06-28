@@ -46,3 +46,13 @@ Route::get('combotutor', 'Tutor\TutorController@combo');
 
 // -- Alumno Familiar --//
 Route::resource('alumnofamiliar', 'AlumnoFamiliar\AlumnoFamiliarController');
+
+// -- Datos Familiar --//
+Route::get('comboconquienvive', 'DatosFamiliar\ConquienViveController@combo');
+Route::get('combodependencia', 'DatosFamiliar\DependenciaController@combo');
+Route::get('combofinancia', 'DatosFamiliar\FinanciaController@combo');
+Route::get('comboinstruccion', 'DatosFamiliar\InstruccionController@combo');
+Route::get('combolabora', 'DatosFamiliar\LaboraController@combo');
+Route::get('comboocupacion', 'DatosFamiliar\OcupacionController@combo');
+Route::get('combopersonasvive', 'DatosFamiliar\PersonasViveController@combo');
+Route::get('combovivienda', 'DatosFamiliar\ViviendaController@combo');

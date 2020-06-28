@@ -39,7 +39,7 @@ export default new VueRouter({
             name: 'editsucursal',
             component: require('./views/sucursal/EditView.vue').default
         },
-        {  //Modulo Sucursal
+        {  //Modulo Diagnostico
             path: '/creatediagnostico',
             name: 'creatediagnostico',
             component: require('./views/diagnostico/CreateView.vue').default
@@ -54,6 +54,11 @@ export default new VueRouter({
             path: '/alumnofamiliar/:id',
             name: 'detailalumnofamiliar',
             component: require('./views/alumnofamiliar/DetailView.vue').default
+        },
+        {
+            path: '/editalumnofamiliar/:id/edit',
+            name: 'editalumnofamiliar',
+            component: require('./views/alumnofamiliar/EditView.vue').default
         },
 
     ]

@@ -16,7 +16,7 @@ class OcupacionModels extends Model
                                 'id_ocupacion',
                                 'nombre'
                                ];
-                               
+
      public function alumnofamiliars()
       {
           return $this->hasMany(AlumnoFamiliarModels::class,'id_ocupacion');

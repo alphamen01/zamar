@@ -93,11 +93,11 @@
                     <div class="card" style="padding-left: 12px; padding-right: 12px;">
                           <h4 class="card-header mb-4">Datos Academicos</h4>
                           <div class="form-row" >
-                            <b-form-group class="col-md-5" label="Facultad:" label-for="input-13">
+                            <b-form-group class="col-md-6" label="Facultad:" label-for="input-13">
                                <b-form-input id="input-13" v-model="data.facultad" disabled></b-form-input>
                              </b-form-group>
 
-                             <b-form-group class="col-md-5" label="Escuela:" label-for="input-14">
+                             <b-form-group class="col-md-4" label="Escuela:" label-for="input-14">
                                 <b-form-input id="input-14" v-model="data.escuela" disabled></b-form-input>
                               </b-form-group>
 
@@ -155,7 +155,7 @@
                                        <b-form-input id="input-25" v-model="data.financia" disabled></b-form-input>
                                     </b-form-group>
 
-                                    <b-form-group class="col-md-4" label="Alguien depende económicamente de ud:" label-for="input-26">
+                                    <b-form-group class="col-md-4" label="¿Alguien depende económicamente de ud?" label-for="input-26">
                                        <b-form-input id="input-26" v-model="data.depedencia_ud" disabled></b-form-input>
                                      </b-form-group>
 
@@ -223,7 +223,15 @@
 
                     </div>
 
-                  
+                    <div class="form-group col-md-12" style="text-align: right;">
+
+                        <div style="text-align: right;">
+                            <router-link to="/alumnofamiliar">
+                            <button type="button"  tabindex="19" class="btn btn-secondary mr-2 mb-2" id="cancelar">Volver</button>
+                            </router-link>
+                        </div>
+                    </div>
+
                 </div>
               </div>
             </div>

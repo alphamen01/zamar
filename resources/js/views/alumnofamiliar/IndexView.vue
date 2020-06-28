@@ -18,7 +18,7 @@
         <div class="air__utils__heading">
         <h3>
             <span class="mr-3"> Estudiante</span>
-            
+
 
         </h3>
         </div>
@@ -35,22 +35,25 @@
                   <table class="table table-hover nowrap" id="datable" >
                     <thead>
                       <tr>
-                        <th style="text-align: center;">#</th>
+                        <th style="text-align: center;">Codigo</th>
                         <th>Apellidos</th>
                         <th>Nombres</th>
                         <th style="text-align: center;">Facultad</th>
-                         <th>Acción</th>
+                         <th style="text-align: center;">Acción</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr v-for ="alumnofamiliar in data">
-                        <td><center> {{ alumnofamiliar.id_alumno_familiar  }} </center></td>
+                        <td><center> {{ alumnofamiliar.carne_universitario }} </center></td>
                         <td>{{ alumnofamiliar.apellidos }}</td>
                         <td>{{ alumnofamiliar.nombres }}</td>
                         <td><center>{{ alumnofamiliar.facultad }}</center></td>
                         <td>
                           <router-link :to="{name: 'detailalumnofamiliar', params: {id: alumnofamiliar.id_alumno_familiar }}">
                               <span class="badge badge-secondary">Detalle</span>
+                          </router-link>
+                          <router-link :to="{name: 'editalumnofamiliar', params: {id: alumnofamiliar.id_alumno_familiar }}">
+                              <span class="badge badge-secondary">Editar</span>
                           </router-link>
                           <!--<router-link :to="{name: 'editsucursal', params: {id: sucursal.id_sucursal }}">
                               <span class="badge badge-secondary">Editar</span>

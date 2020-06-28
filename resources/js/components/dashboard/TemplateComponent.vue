@@ -59,23 +59,23 @@
                 </ul>
               </li>
                <!-- Modulo Estudiante -->
-              <li class="air__menuLeft__item air__menuLeft__submenu">
+              <li class="air__menuLeft__item air__menuLeft__submenu" >
                 <a href="javascript: void(0)" class="air__menuLeft__link">
                   <i class="fe fe-user air__menuLeft__icon"></i>
                   <span>Estudiante</span>
                 </a>
-                <ul class="air__menuLeft__list">
+                <ul class="air__menuLeft__list" >
                     <li class="air__menuLeft__item">
                       <a href="#" class="air__menuLeft__link">
                         <router-link :to="{name: 'alumnofamiliar'}">Estudiante</router-link>
                       </a>
                     </li>
-                  <li class="air__menuLeft__item">
+                  <li class="air__menuLeft__item" style="width: 190px;">
                     <a href="#" class="air__menuLeft__link">
-                      <span>Representante</span>
+                      <span>Actualizacion Datos</span>
                     </a>
                   </li>
-                   <li class="air__menuLeft__item">
+                   <li class="air__menuLeft__item" style="width: 170px;">
                     <a href="#" class="air__menuLeft__link">
                       <span>Familia</span>
                     </a>

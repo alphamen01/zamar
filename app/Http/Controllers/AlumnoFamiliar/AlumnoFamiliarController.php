@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 // Zamar
 use App\Repositories\AlumnoFamiliar\AlumnoFamiliarRepository;
 //use App\Http\Requests\AlumnoFamiliar\AlumnoFamiliarCreateRequest;
-//use App\Http\Requests\AlumnoFamiliar\AlumnoFamiliarUpdateRequest;
+use App\Http\Requests\AlumnoFamiliar\AlumnoFamiliarUpdateRequest;
 
 
 class AlumnoFamiliarController extends Controller
@@ -58,7 +58,7 @@ class AlumnoFamiliarController extends Controller
 
     public function edit($id)
     {
-         $AlumnoFamiliar = $this->AlumnoFamiliarRepository->find($id);
+         $AlumnoFamiliar = $this->AlumnoFamiliarRepository->actualizar($id);
          return $AlumnoFamiliar;
     }
 
